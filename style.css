@@ -1,1 +1,85 @@
+@font-face {
+    font-family: "Mostwasted"; /* A name you choose for your font */
+    src: 
+        url("fonts/mostwasted/Mostwasted.woff2") format("woff2"), /* Use appropriate paths and formats */
+         url("fonts/mostwsted/Mostwasted.woff") format("woff"),
+         url("fonts/mostwasted/Mostwasted.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    /* Optional: control font loading behavior */
+    font-display: swap; 
+}
 
+
+body{
+    background-color:black;
+    color:white;
+    display:flex;
+    justify-content: center;
+}
+
+
+.BigTitle{
+    font-family: "Mostwasted", monospace;
+    font-size:200px;
+    margin:45px;
+}
+
+
+.navButton{
+    position:absolute;
+
+    width:200px;
+    height:200px;
+    left:70px;
+    top:70px;
+}
+
+#buttonBase{
+    width:60px;
+    height:60px;
+    background-color:white;
+    position:absolute;
+    border:5px black solid;
+    border-radius:100px;
+    margin:auto;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+
+
+#button1{
+    width:100px;
+    height:100px;
+    background-color:white;
+    position:absolute;
+    border-radius:0px 60px 0px 60px;
+}
+#button2{
+    width:100px;
+    height:100px;
+    background-color:white;
+    position:absolute;
+    right:0;
+    border-radius:60px 0px 60px 0px;
+}
+#button3{
+    width:100px;
+    height:100px;
+    background-color:white;
+    position:absolute;
+    right:0;
+    bottom:0;
+    border-radius:0px 60px 0px 60px;
+}
+#button4{
+    width:100px;
+    height:100px;
+    background-color:white;
+    position:absolute;
+    left:0;
+    bottom:0;
+    border-radius:60px 0px 60px 0px;
+}
