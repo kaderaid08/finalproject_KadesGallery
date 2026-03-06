@@ -31,7 +31,7 @@ nav{
     font-family: "Mostwasted", monospace;
     font-size:200px;
     margin:15px;
-    padding:50px;
+    padding:10px;
 }
 
 
@@ -93,16 +93,33 @@ nav{
     border-radius:60px 0px 60px 0px;
 }
 
-
-
+.intro{
+    display:flex;
+    flex-direction: column;
+}
 #placeholderText{
     font-size:30px;
+    width:1500px;
+    left:0;
+    right:0;
+    margin:auto;
     text-align: center;
 }
 .imageScroll{
     display:flex;
     justify-content: space-evenly;
     flex-direction: row;
+    /* will-change: transform; 
+
+    transform: 
+    translate3d(0px, 0px, 0px) 
+    scale3d(1, 1, 1) 
+    rotateX(0deg) 
+    rotateY(0deg) 
+    rotateZ(0deg) 
+    skew(0deg, 0deg); 
+
+    transform-style: preserve-3d; */
 }
 .imageBlock{
     width:400px;
