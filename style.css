@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Mostwasted"; /* A name you choose for your font */
     src: 
-        url("fonts/mostwasted/Mostwasted.woff2") format("woff2"), /* Use appropriate paths and formats */
+        url("fonts/mostwasted/Mostwasted.woff2") format("woff2"), /* Use appropriate paths and formats*/
          url("fonts/mostwsted/Mostwasted.woff") format("woff"),
          url("fonts/mostwasted/Mostwasted.ttf") format("truetype");
     font-weight: normal;
@@ -9,6 +9,89 @@
     /* Optional: control font loading behavior */
     font-display: swap; 
 }
+
+.hidden{
+    visibility: hidden;
+}
+
+.openAnimation{
+    width:100vw;
+    height:100vh;
+    background-color:black;
+    border:blue solid 5px;
+    position:absolute;
+    transition: 0.4s;
+}
+@keyframes fly {
+  0% {right:0px; right:0px; bottom:0px;}
+  50%{ right:500px; bottom:800px;}
+  50.1%{ right:0px; bottom:900px;}
+  100% {right:0px; right:0px; bottom:0px;}
+}
+
+.navICON{
+    position:absolute;
+    width:500px;
+    height:500px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    top:0px;
+    margin:auto;
+}
+
+#ICONBase{
+    width:180px;
+    height:180px;
+    background-color:white;
+    position:absolute;
+    border:10px black solid;
+    border-radius:100px;
+    margin:auto;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+
+
+#ICON1{
+    width:250px;
+    height:250px;
+    background-color:white;
+    position:absolute;
+    border-radius:0px 120px 0px 120px;
+}
+#ICON2{
+    width:250px;
+    height:250px;
+    background-color:white;
+    position:absolute;
+    right:0;
+    border-radius:120px 0px 120px 0px;
+}
+#ICON3{
+    width:250px;
+    height:250px;
+    background-color:white;
+    position:absolute;
+    right:0;
+    bottom:0;
+    border-radius:0px 120px 0px 120px;
+}
+#ICON4{
+    width:250px;
+    height:250px;
+    background-color:white;
+    position:absolute;
+    left:0;
+    bottom:0;
+    border-radius:120px 0px 120px 0px;
+}
+
+
+
+
 
 
 body{
