@@ -7,9 +7,27 @@ var flowerIcon = document.querySelector("#navICON");
 
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
-  if (document.body.scrollTop > 2 || document.documentElement.scrollTop > 2) {
-    flowerIcon.style.width = "200px";
-    flowerIcon.style.height = "200px";
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    flowerIcon.classList.add("animation1")
     console.log("hiiii")
     }
 }
+
+// flowerIcon.style.position=`fixed`;
+// flowerIcon.style.top=0;
+// document.body.style.paddingTop=`100vh`;
+
+// flowerIcon.animate({
+// 	backgroundPosition: ["50% 100%", "50% 0%"],
+// 	backgroundColor: ['transparent', '#5eff00'],
+// 	height: ['500px', `200px`],
+//     width:[`500px`, `200px`],
+// },
+// {
+// 	fill: "both",
+// 	timeline: new ScrollTimeline({
+// 		source: document.documentElement,
+// 	}),
+// 	rangeStart: '0',
+// 	rangeEnd: '50vh',
+// });
