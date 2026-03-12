@@ -5,13 +5,13 @@ var flowerIcon = document.querySelector("#navICON");
 //  (document.documentElement.scrollHeight - document.documentElement.clientHeight);
 
 
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    flowerIcon.classList.add("animation1")
-    console.log("hiiii")
-    }
-}
+// window.onscroll = function() {scrollFunction()};
+// function scrollFunction() {
+//   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+//     flowerIcon.classList.add("animation1")
+//     console.log("hiiii")
+//     }
+// }
 
 // flowerIcon.style.position=`fixed`;
 // flowerIcon.style.top=0;
