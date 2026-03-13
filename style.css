@@ -16,30 +16,42 @@
     font-display: swap; 
 }
 
-body{
+.container{
     background-color:black;
     color:white;
-    display:flex;
-    flex-direction: column;
+    display:grid;
+    grid-template-areas:
+    "openAnimation header"
+    "section1 content"
+    "section2 content"
+    "footer footer";
+    gap: 5px;
+    width:100vw;
+    height:100vh;
+    border:25px orange solid;
 }
-
 .hidden{
     visibility: hidden;
 }
 
-.openAnimation{
-    position:absolute;
-    width:100%;
+.container div.openAnimation{
+    grid-area:header;
+    width:100vw;
     height:200px;
-    background-color:black;
+    background-color:rgb(173, 59, 59);
     border:blue solid 5px;
-    position:absolute;
     transition: 0.4s;
 }
 
 
-.navICON{
-    position:absolute;
+.container div.section1{
+    grid-area:section1;
+    width:100vw;
+    border:solid red 5px;
+    height:900px;
+}
+
+div.navICON{
     width:500px;
     height:500px;
     left:0px;
@@ -93,15 +105,6 @@ body{
 
 
 
-header{
-    width:100%;
-    border:solid red 5px;
-    height:900px;
-}
-nav{
-    display:flex;
-    justify-content:center;
-}
 
 .BigTitle{
     font-family: "Mostwasted", monospace;
