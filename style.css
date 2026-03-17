@@ -40,3 +40,33 @@
     text-align:center;
     padding:0px 150px 0px 150px;
 }
+.imageScroll{
+    display:flex;
+    border:5px white solid;
+    width:1400px;
+    right:0;
+    left:0;
+    margin:auto;
+    height:500px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+	white-space: nowrap;
+	max-width: calc(var(--cover-size) * 5);
+	overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+.imageBlock{
+    height:250px;
+    border:red solid 2px;
+    background-color:blue;
+    margin:auto 20px;
+    width:100%;
+    list-style: none;
+    display: inline-block;
+	width: var(--cover-size);
+	aspect-ratio: 1;
+    scroll-snap-align: center;
+	height: auto;
+	-webkit-box-reflect: below 0.5em linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.25));
+}
