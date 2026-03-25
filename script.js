@@ -31,3 +31,57 @@ var flowerIcon = document.querySelector("#navICON");
 // 	rangeStart: '0',
 // 	rangeEnd: '50vh',
 // });
+
+
+
+
+//REDDIT TRIAL???//
+// const div = document.querySelector(`div`);
+
+// window.addEventListener(`scroll`, () => {
+//     console.log(window.scrollX)
+//     div.style.width = `${64 + windowscrollY}px`;
+//     div.style.height = `${64 +windowscrollY}px`;
+// });
+
+
+
+// var defaultheight = parseInt( document.getElementById("openAnimation").offsetHeight);
+// window.onscroll=function(){
+//     var tdiv= this.document.getElementById(`openAnimation`);
+//     tdiv.style.height = (defaultheight - document.documentElement.scrollTop) + "20px"
+// }
+
+
+// var divToChange = $('#openAnimation');
+// var lastScroll=0
+// $(document).scroll(function(event){
+//     var st = $(this).scrollTop();
+//     var divHeight = (`100vh`)-st;
+//     divToChange.css({width:divWidth, height:divHeight});
+// });
+
+
+// window.scroll(function() {
+//     var div = $('header'),
+//         divHeight = div.outerHeight(),
+//         st = window.scrollTop(),
+//         scrollHeight = divHeight - st;
+
+//   $('header').css({ 'height': scrollHeight });
+
+//   if (divHeight == 0) {
+//     $('header').css({ 'display': 'none' });
+//   }
+// });
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.fontSize = "30px";
+  } else {
+    document.getElementById("header").style.fontSize = "90px";
+  }
+}
