@@ -23,7 +23,7 @@ body{
     border: 5px white solid;
     grid-template-columns: auto;
     color:white;
-    border: red solid 5px;
+    /* border: red solid 5px; */
 }
 .openAnimation{
     display:grid;
@@ -40,15 +40,17 @@ body{
 
 
 .navICON{
+    position:absolute;
     height:500px;
-    width:500px
+    width:500px;
+    transform-origin: top-left;
 }
 .section1{
     background-color:black;
     color:white;
     width:100%;
     height:100vh;
-    border:yellow solid 5px;
+    /* border:yellow solid 5px; */
 }
 .BigTitle{
     font-family: "Mostwasted", monospace;
@@ -92,16 +94,17 @@ body{
     }
 }
 .imageBlock{
-    border:red solid 2px;
+    /* border:red solid 2px; */
     background-color:blue;
     margin:auto 20px;
     width:400px;
+    overflow:hidden;
     list-style: none;
     display: inline-block;
-	width: var(--cover-size);
+	/* width: var(--cover-size); */
 	aspect-ratio: 1;
     scroll-snap-align: center;
-	height: 300px;
+	/* height: 30; */
 	-webkit-box-reflect: below 0.5em linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.25));
 }
 

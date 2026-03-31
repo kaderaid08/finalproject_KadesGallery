@@ -1,6 +1,6 @@
 console.log("hello")
-const openAnimation = document.querySelector("#openAnimation");
-var flowerIcon = document.querySelector("#navICON");
+// const openAnimation = document.querySelector("#openAnimation");
+// var flowerIcon = document.querySelector("#navICON");
 // let scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) 
 //  (document.documentElement.scrollHeight - document.documentElement.clientHeight);
 
@@ -76,12 +76,94 @@ var flowerIcon = document.querySelector("#navICON");
 // });
 
 
-window.onscroll = function() {scrollFunction()};
+// window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("#openAnimation").style.height = "30px";
-  // } else {
-  //   document.getElementById("header").style.fontSize = "90px";
-  // }
-}}
+// function scrollFunction() {
+//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+//     document.getElementById("openAnimation").style.height = "30px";
+//   // } else {
+//   //   document.getElementById("header").style.fontSize = "90px";
+//   // }
+// }}
+
+
+// MIGHT ACTUALLY WORK//
+
+// const navImg = document.getElementById(`navICON`);
+
+// const final_width = 50;
+// const final_height = 50;
+// const final_top = 20;
+// const final_left = 20;
+
+// function lerp(start, end, t){
+//   return start + (end - start) * t;
+// }
+
+// function onScroll() {
+//   const scrollY = window.scrollY;
+//   const maxScroll = window.innerHeight;
+//   const t = Math.min(scrollY/maxScroll, 1);
+//   const vw = window.innerWidth;
+//   const vh = window.innerHeight;
+
+
+//   const currentWidth = lerp(vw, final_width, t);
+//   const currentHeight = lerp(vh, final_height, t);
+
+
+//   const currentTop = lerp (0, final_top, t);
+//   const currentLeft = lerp (vh, final_height, t);
+
+
+//   navImg.style.width = currentWidth + `px`;
+//   navImg.style.height = currentHeight + `px`;
+//   navImg.style.top = currentTop + `px`;
+//   navImg.style.left = currentLeft + `px`;
+// }
+
+
+
+
+    const navImg = document.getElementById('#navICON');
+
+    // Final size and position of the thumbnail in the corner
+    const FINAL_WIDTH  = 50;  // px — adjust to taste
+    const FINAL_HEIGHT = 50;  // px
+    const FINAL_TOP    = 20;   // px from top
+    const FINAL_LEFT   = 20;   // px from left
+
+    function lerp(start, end, t) {
+      return start + (end - start) * t;
+    }
+
+    function onScroll() {
+      const scrollY   = window.scrollY;
+      const maxScroll = window.innerHeight; // 
+      const t = Math.min(scrollY / maxScroll, 1); 
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+
+   
+      const currentWidth  = lerp(vw, FINAL_WIDTH,  t);
+      const currentHeight = lerp(vh, FINAL_HEIGHT, t);
+
+      
+      const currentTop  = lerp(0, FINAL_TOP,  t);
+      const currentLeft = lerp(0, FINAL_LEFT, t);
+
+      navImg.style.width  = currentWidth  + 'px';
+      navImg.style.height = currentHeight + 'px';
+      navImg.style.top    = currentTop    + 'px';
+      navImg.style.left   = currentLeft   + 'px';
+
+      // Optional: add a subtle border-radius as it shrinks
+      navImg.style.borderRadius = lerp(0, 12, t) + 'px';
+
+      // Optional: add a box shadow as it becomes a thumbnail
+      // const shadowOpacity = t * 0.5;
+      navImg.style.boxShadow = `0 ${t * 20}px ${t * 40}px rgba(0,0,0,${shadowOpacity})`;
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll(); // run once on load
