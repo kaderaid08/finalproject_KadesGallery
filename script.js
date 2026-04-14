@@ -125,7 +125,7 @@ console.log("hello")
 
 
 
-    const navImg = document.getElementById('#navICON');
+    const navImg = document.getElementById('#navIMG');
 
     // Final size and position of the thumbnail in the corner
     const FINAL_WIDTH  = 50;  // px — adjust to taste
