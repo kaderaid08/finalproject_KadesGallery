@@ -129,13 +129,14 @@ body{
 }
 
 .section2{
-    height:200vh;
+    height:auto;
     width:100%;
-    border:green solid 5px;
+    border:rgb(233, 136, 169) solid 5px;
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
+
 
 .placeholderIMG{
     width:400px;
@@ -149,12 +150,12 @@ body{
     border:green solid 5px;
 }
 .img1{
-    position:absolute;
-    left:0;
+    position:relative;
+    object-fit: cover;
 }
 .img2{
-    position:absolute;
-    right:0;
+    position:relative;
+    object-fit: cover;
 }
 
 .section3{
