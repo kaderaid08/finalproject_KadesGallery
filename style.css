@@ -167,3 +167,13 @@ body{
     border:blue solid 5px;
 }
 
+@media screen and (max-width: 300px){
+    .section3{
+        display:flex;
+        flex-direction: column;
+    }
+    #img3{
+        display: flex;
+        justify-content: center;
+    }
+}
