@@ -105,9 +105,9 @@ body{
     padding:0 3em 0 3em;
 }
 .imageScroll{
-    display:flex;
+    /* display:flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
     border:5px white solid;
     width:85%;
     right:0;
@@ -131,13 +131,18 @@ body{
 	animation-timeline: --li-in-and-out-of-view;
     perspective: 40em;
 }
+.imageScroll li .imageBlock{
+    width: 100%;
+	height: auto;
+	-webkit-box-reflect: below 0.5em linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.25));
 
+}
 .imageBlock{
     /* border:red solid 2px; */
     background-color:blue;
     margin:auto 20px;
     overflow:hidden;
-	-webkit-box-reflect: below 0.5em linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.25));
+	/* -webkit-box-reflect: below 0.5em linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.25)); */
 }
 
 .imageScroll li> imageBlock{
