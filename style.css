@@ -134,6 +134,7 @@ body{
 .imageScroll li .imageBlock{
     width: 100%;
 	height: auto;
+    padding:5em;
 	-webkit-box-reflect: below 0.5em linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.25));
 
 }
